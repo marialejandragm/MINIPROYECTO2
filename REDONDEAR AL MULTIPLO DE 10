@@ -1,0 +1,15 @@
+nList = []
+
+n = int(input("Ingresa el tamaño de tu lista de números:"))
+
+for i in range(0,n):
+    print("Ingresa un numero en cada posición:", i, ":")
+    recibir = int(input())
+    nList.append(recibir)
+
+    if (recibir%10>5): 
+        recibir = recibir + 10
+    recibir = recibir / 10
+    recibir = int(recibir)
+    recibir = recibir * 10
+    print (recibir)
