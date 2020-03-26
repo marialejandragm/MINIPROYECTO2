@@ -1,0 +1,12 @@
+nList = []
+n = int(input("Ingresa el tamaño de la lista : "))
+for i in range(0, n):
+    print("Ingresa un numero en cada posición:", i, ":")
+    recibir = float(input())
+    nList.append(recibir)
+print("Tu lista es: ", nList)
+
+num = 0
+redondear = [round(num) for num in nList]
+
+print(redondear)
